@@ -16,7 +16,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <220>;
+            tapping-term-ms = <150>;
             quick-tap-ms = <150>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
@@ -29,7 +29,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-            &kp Q       &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
+            &ht ESC Q  &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &ht BSPC P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ;       │
            &ht LSHFT A &kp S      &kp D     &kp F     &kp G            &kp H      &kp J      &kp K       &kp L    &ht RSHFT SEMI 
@@ -52,8 +52,8 @@
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp MINUS  &kp COLON
 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ `        │  ~       │ +        |  ESC     │  =       │   │  DELETE  |  BACKSPC │  _       │  "       │  '       │
-           &kp GRAVE  &kp TILDE  &kp PLUS    &kp ESC    &kp EQUAL      &kp DEL    &kp BSPC   &kp UNDER  &kp DQT    &kp SQT        
+        //│ `        │  ~       │          |          │          │   │          │          │          │  "       │  '       │
+           &kp GRAVE  &kp TILDE   &none      &none      &none          &none     &none       &none      &kp DQT    &kp SQT        
 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &kp ENTER   &trans
@@ -64,14 +64,14 @@
         two_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │   │          │          │  (       │  )       │  \       │
-            &none      &none      &none      &none      &none          &none      &none      &kp LPAR   &kp RPAR   &kp BSLH
+        //│          │          │          │          │          │   │ DELETE   │  +       │  (       │  )       │  \       │
+            &none      &none      &none      &none      &none          &kp DEL    &kp PLUS   &kp LPAR   &kp RPAR   &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │          │  [       │  ]       │  |       │
-           &ht LSHFT A &none      &none      &none      &none          &none      &none      &kp LBKT   &kp RBKT   &kp PIPE
+        //│          │          │          │          │          │   │          │  =       │  [       │  ]       │  |       │
+           &ht LSHFT A &none      &none      &none      &none          &kp TAB    &kp EQUAL  &kp LBKT   &kp RBKT   &kp PIPE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │          |  {       │  }       │  /       │
-            &ht LALT Z &none      &none      &trans     &none          &trans     &trans     &kp LBRC   &kp RBRC  &ht RALT FSLH
+        //│          │          │          │          │          │   │          │  _       |  {       │  }       │  /       │
+            &ht LALT Z &none      &none      &none      &none          &kp SPACE  &kp UNDER  &kp LBRC   &kp RBRC  &ht RALT FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
