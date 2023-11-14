@@ -33,13 +33,12 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ;       │
-            &kp A    &ht LSHFT S  &kp D      &kp F      &kp G          &kp H      &kp J      &kp K    &ht RSHFT L  &kp  SEMI 
+          &ht LSHFT A  &kp S      &kp D      &kp F      &kp G          &kp H      &kp J      &kp K      &kp L    &ht RSHFT SEMI 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &ht LALT Z &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT  &ht RALT FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &kp LCTRL   &lt 1 TAB     &lt 2 SPACE  &lt 3 ENTER 
-        //                                  &kp LCTRL   &mo 1         &lt 2 SPACE  &lt 3 ENTER 
+                                            &kp LCTRL   &mo 1         &lt 2 SPACE  &lt 3 ENTER 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -47,15 +46,15 @@
         one_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ 1        │  2       │  3       │  4       │  5       │   │  6       │  7       │  8       │  9       │  0       │
-            &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     
+        //│  ESC     │  `       │ ~        │          │          │   │          │          │   "      │  '       │  BACKSPC │  
+            &kp ESC   &kp GRAVE  &kp TILDE   &none       &kp TAB        &none     &none      &kp DQT    &kp SQT    &kp BSPC       
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  -       │  :       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp MINUS  &kp COLON
 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │  `       │ ~        │  =       │          │   │  +       │  _       │   "      │  '       │  ?       │  
-            &none     &kp GRAVE  &kp TILDE   &kp EQUAL  &none          &kp PLUS   &kp UNDER  &kp DQT    &kp SQT    &kp QMARK      
+        //│ 1        │  2       │  3       │  4       │  5       │   │  6       │  7       │  8       │  9       │  0       │
+            &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     
 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &kp ENTER   &trans
@@ -66,16 +65,16 @@
         two_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │   │  DELETE  │          │  (       │  )       │  \       │
-            &none      &none      &none      &none      &none          &kp DEL    &none      &kp LPAR   &kp RPAR   &kp BSLH
+        //│  ESC     │          │          │          │          │   │  DELETE  │  +       │  (       │  )       │  BACKSPC │
+            &kp ESC    &none      &none      &none      &none          &kp DEL    &kp PLUS   &kp LPAR   &kp RPAR   &kp BSPC 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  ESC     │  ESC     │          │  ESC     │          │   │          │  BACKSPC │  [       │  ]       │  |       │
-            &kp ESC    &kp ESC    &none      &kp ESC    &none          &kp TAB    &kp BSPC   &kp LBKT   &kp RBKT   &kp PIPE 
+        //│          │          │          │          │          │   │          │  =       │  [       │  ]       │  |       │
+            &none      &none      &none      &none      &none          &kp TAB    &kp EQUAL  &kp LBKT   &kp RBKT   &kp PIPE 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │                     |  {       │  }       │  /       │
-            &none      &none      &none      &none      &none          &kp SPACE   &none     &kp LBRC   &kp RBRC   &kp FSLH
+        //│          │          │          │          │          │   │             _       |  {       │  }       │  \       │
+            &none      &none      &none      &none      &none          &kp SPACE  &kp UNDER  &kp LBRC   &kp RBRC   &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp ESC         &trans     &trans
+                                             &trans     &kp TAB         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
