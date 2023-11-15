@@ -72,8 +72,8 @@
         //│          │          │          │          │          │   │  BACKSPC │  =          [       │  ]       │  |       │
             &none      &none      &none      &none      &none          &kp BSPC   &kp EQUAL  &kp LBKT   &kp RBKT   &kp PIPE 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │             _       |  {       │  }       │  /       │
-            &kp ESC    &none      &none      &none      &none          &kp SPACE  &kp UNDER  &kp LBRC   &kp RBRC   &kp FSLH
+        //│          │          │          │          │          │   │             _       |  {       │  }       │  BACKSPC │
+            &kp ESC    &none      &none      &none      &none          &kp SPACE  &kp UNDER  &kp LBRC   &kp RBRC   &kp BSPC
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp TAB        &kp ENTER   &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
