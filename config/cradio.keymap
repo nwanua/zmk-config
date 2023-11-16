@@ -56,9 +56,9 @@
 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  `       │ ~        │          │          │   │          │          │  "       │  '       │  ?
-            &kp ESC    &kp GRAVE  &kp TILDE   &none      &none          &none     &none      &kp DQT    &kp SQT    &kp QMARK
+            &kp ESC    &kp GRAVE  &kp TILDE  &kp TAB    &kp TAB        &none      &none      &kp DQT    &kp SQT    &kp QMARK
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &kp ENTER   &trans
+                                             &trans     &trans         &kp ENTER  &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -69,13 +69,13 @@
         //│          │          │          │          │          │   │  DELETE  │  +       │  (       │  )       │  \       │
             &kp ESC    &none      &none      &none      &none          &kp DEL   &kp PLUS    &kp LPAR   &kp RPAR   &kp BSLH 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │  BACKSPC │  =          [       │  ]       │  |       │
-            &none      &none      &none      &none      &none          &kp BSPC   &kp EQUAL  &kp LBKT   &kp RBKT   &kp PIPE 
+        //│          │          │          │          │  =       │   │  =       │  BACKSPC    [       │  ]       │  |       │
+            &none      &none      &none      &none      &kp EQUAL      &kp EQUAL  &kp BSPC   &kp LBKT   &kp RBKT   &kp PIPE 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │             _       |  {       │  }       │  BACKSPC │
-            &kp ESC    &none      &none      &none      &none          &kp SPACE  &kp UNDER  &kp LBRC   &kp RBRC   &kp BSPC
+            &kp ESC    &none      &none      &kp TAB    &kp TAB        &kp SPACE  &kp UNDER  &kp LBRC   &kp RBRC   &kp BSPC
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp TAB        &kp ENTER   &trans
+                                             &trans     &trans         &kp ENTER   &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
