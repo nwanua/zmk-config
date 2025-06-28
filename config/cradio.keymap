@@ -89,7 +89,7 @@
             &none      &none      &none      &none      &bt BT_PRV     &kp PG_DN  &kp PG_UP  &kp END    &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  LEFT    │  DOWN    │  UP      │  RIGHT   │          │
-            &none      &none      &none      &none      &bt BT_NXT     &kp LARW   &kp DARW   &kp UARW   &kp RARW   &none 
+            &none      &none      &none      &none      &bt BT_NXT     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &none      &none      &none      &trans     &bt BT_CLR     &none      &trans     &none      &none      &none 
