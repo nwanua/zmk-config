@@ -85,7 +85,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │  HOME    │  PAGE DN │ PAGE UP  │ END      │          │
-            &kp F1     &kp F2     &kp F3     &kp F4     &kp F5         &kp PG_DN  &kp PG_UP  &kp END    &none      &kp INSERT
+            &kp F1     &kp F2     &kp F3     &kp F4     &kp F5         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp INSERT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  LEFT    │  DOWN    │  UP      │  RIGHT   │          │
             &kp F6     &kp F7     &kp F8     &kp F9     &kp F10        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none
